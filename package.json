@@ -1,0 +1,22 @@
+{
+  "name": "config-api",
+  "version": "0.0.1",
+  "description": "Configuration API",
+  "keywords": [],
+  "bugs": {
+    "url": ""
+  },
+  "author": [{
+      "name": "Andrew Forth"
+  }],
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5",
+    "should": "8.2.2"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --reporter spec --recursive ./test/*",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --recursive  ./test/lib/* -- -u exports -R spec"
+  }
+}

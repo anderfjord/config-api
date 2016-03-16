@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "api",
+      "instances": 1,
+      "cron_restart": "0 */24 * * *",
+      "script": "./agents/api.js",
+      "log_date_format": "YYYY-MM-DD",
+      "exec_mode": "cluster_mode",
+      "merge_logs": true,
+      "log_file": "/var/log/config-api/api.log",
+      "error_file": "/var/log/config-api/api-err.log",
+      "out_file": "/var/log/config-api/api-out.log",
+      "pid_file": "/var/run/config-api/api.pid",
+      "env": {
+        "PORT": 3000
+      }
+    }
+  ]
+}
