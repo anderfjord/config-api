@@ -8,10 +8,10 @@
       "log_date_format": "YYYY-MM-DD",
       "exec_mode": "cluster_mode",
       "merge_logs": true,
-      "log_file": "/var/log/config-api/api.log",
-      "error_file": "/var/log/config-api/api-err.log",
-      "out_file": "/var/log/config-api/api-out.log",
-      "pid_file": "/var/run/config-api/api.pid",
+      "log_file": "/var/log/configlieri/api.log",
+      "error_file": "/var/log/configlieri/api-err.log",
+      "out_file": "/var/log/configlieri/api-out.log",
+      "pid_file": "/var/run/configlieri/api.pid",
       "env": {
         "PORT": 3000
       }
