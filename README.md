@@ -43,6 +43,7 @@ To get started, you have to create a user acount and login so that you can start
 It's best to use something like [Google ARC]() for interacting with the API, since this allows you to retain the session cookie.
 
 ### Example Routes
+Action | Route | Payload
 --- | --- | ---
 **Add User** | POST /users | {username: "colonelsandurz", password: "ch!ck3n"}
 **Login** | POST /sessions | {username: "colonelsandurz", password: "ch!ck3n"}
