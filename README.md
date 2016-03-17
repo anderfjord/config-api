@@ -32,3 +32,23 @@ Unit tests are run using [Mocha](https://mochajs.org/)
 Open `coverage/lcov-report/index.html` in a browser
 
 Code coverage is generated using [Istanbul](https://www.npmjs.com/package/istanbul) in conjunction with [Mocha](https://mochajs.org/)
+
+
+## Usage
+The app is hosted on AWS here:
+http://
+
+To get started, you have to create a user acount and login so that you can start playing with configuration CRUD.
+
+It's best to use something like [Google ARC]() for interacting with the API, since this allows you to retain the session cookie.
+
+### Example Routes
+--- | --- | ---
+**Add User** | POST /users | {username: "colonelsandurz", password: "ch!ck3n"}
+**Login** | POST /sessions | {username: "colonelsandurz", password: "ch!ck3n"}
+**Logout** | DELETE /sessions | 
+**Get All Configs** | GET /configurations | 
+**Get Configs - Sort name asc** | GET /configurations?sort=+name | 
+**Get Configs - Sort name desc** | GET /configurations?sort=-name | 
+**Get Configs - Sort port asc** | GET /configurations?sort=+port | 
+**Get Configs - Sort port desc** | GET /configurations?sort=-port | 
