@@ -45,11 +45,19 @@ It's best to use something like [Google ARC]() for interacting with the API, sin
 ### Example Routes
 Action | Route | Payload
 --- | --- | ---
-**Add User** | POST /users | {username: "colonelsandurz", password: "ch!ck3n"}
-**Login** | POST /sessions | {username: "colonelsandurz", password: "ch!ck3n"}
+**Add User** | POST /users | { "username": "colonelsandurz", "password": "ch!ck3n" }
+**Login** | POST /sessions | { "username": "colonelsandurz", "password": "ch!ck3n" }
 **Logout** | DELETE /sessions | 
 **Get All Configs** | GET /configurations | 
-**Get Configs - Sort name asc** | GET /configurations?sort=+name | 
-**Get Configs - Sort name desc** | GET /configurations?sort=-name | 
-**Get Configs - Sort port asc** | GET /configurations?sort=+port | 
-**Get Configs - Sort port desc** | GET /configurations?sort=-port | 
+**Sort Configs - name asc** | GET /configurations?sort=+name | 
+**Sort Configs - name desc** | GET /configurations?sort=-name | 
+**Sort Configs - hostname asc** | GET /configurations?sort=+hostname | 
+**Sort Configs - hostname desc** | GET /configurations?sort=-hostname | 
+**Sort Configs - port asc** | GET /configurations?sort=+port | 
+**Sort Configs - port desc** | GET /configurations?sort=-port | 
+**Sort Configs - username asc** | GET /configurations?sort=+username | 
+**Sort Configs - username desc** | GET /configurations?sort=-username | 
+**Add Config** | POST /configurations | { "name": "2tonecold", "hostname": "x-y-z.abc.net", port: 187, "username": "serpico" }
+**Get Config** | GET /configurations/2stonecold | 
+**Modify Config** | PUT /configurations/2stonecold | { "hostname": "a-b-c.123.net", port: 781 }
+**Delete Config** | DELETE /configurations/2stonecold | 
