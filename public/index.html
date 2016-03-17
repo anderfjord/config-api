@@ -34,12 +34,13 @@
     <h3>Make sure to do the following before trying to work with configurations:</h3>
 
     <h3>Create a user</h3>
-    POST /users
+    POST http://ec2-54-175-0-34.compute-1.amazonaws.com:3000/users<br>
     { "username": "unicorn", "password": "narwh@l" }
 
     <h3>Create a session (login)</h3>
-    POST /sessions
+    POST http://ec2-54-175-0-34.compute-1.amazonaws.com:3000/sessions<br>
     { "username": "unicorn", "password": "narwh@l" }
+
 
     <p class="instrucs">Full instructions can be found <a href="https://github.com/anderfjord/configlieri" target="_blank">here</a>.</p>
 
