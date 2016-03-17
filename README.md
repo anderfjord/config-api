@@ -15,7 +15,7 @@ See [INSTALL.md](INSTALL.md)
 ## Configure the app
 See [CONFIG.md](CONFIG.md)
 
-## Install local Node.js dependencies
+## Install local Node.js dependencies for unit testing
 `npm install`
 
 ## Start the app
