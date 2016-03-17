@@ -6,10 +6,10 @@
 See [INSTALL.md](INSTALL.md)
 
 ## Clone the repo
-`git clone https://github.com/anderfjord/config-api`
+`git clone https://github.com/anderfjord/configlieri`
 
 ## Change into the project directory
-`cd config-api`
+`cd configlieri`
 
 ## Configure the app
 See [CONFIG.md](CONFIG.md)

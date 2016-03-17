@@ -13,11 +13,11 @@
 `npm install pm2 -g`
 
 ### Create directory for PM2 to store process pid files
-`sudo mkdir /var/run/config-api`
+`sudo mkdir /var/run/configlieri`
 
-`sudo chown -R <app-user>:<app-user-group> /var/run/config-api`
+`sudo chown -R <app-user>:<app-user-group> /var/run/configlieri`
 
 ### Create directory for PM2 to store log files
-`sudo mkdir /var/log/config-api`
+`sudo mkdir /var/log/cconfiglieri`
 
-`sudo chown -R <app-user>:<app-user-group> /var/log/config-api`
+`sudo chown -R <app-user>:<app-user-group> /var/log/configlieri`
