@@ -57,6 +57,7 @@
     <div class="row bot-4">
         <a id="verdict">And the verdict is... <span class="small">(Hint: click)</span></a>
         <div id="the-verdict">
+            <h2>Unequivocally: BEAST</h2>
             <img src="img/the_verdict.jpg" width="475" />
             <h3>Unicorns don't exist. And even if they did, they'd be impaled long before they got anywhere near a narwhal.</h3>
         </div>
@@ -65,8 +66,7 @@
     <br class="clear" />
 
     <script type="text/javascript">
-        var verdict = document.getElementById('verdict');
-        verdict.addEventListener('click', function () {
+        var playManeater = function () {
             document.getElementById('the-verdict').style.display = 'block';
             var iframe = document.createElement('IFRAME');
             iframe.width = 420;
@@ -75,7 +75,10 @@
             iframe.frameborder = 0;
             iframe.style.display = 'none';
             document.getElementsByTagName('body')[0].appendChild(iframe);
-        });
+            verdict.removeEventListener('click', playManeater)
+        };
+        var verdict = document.getElementById('verdict');
+        verdict.addEventListener('click', playManeater);
     </script>
 
 </body>
