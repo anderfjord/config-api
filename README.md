@@ -1,6 +1,5 @@
 ## Requirements
 * [Node.js](http://nodejs.org/) -- v5.6.0
-* [MongoDB](https://www.mongodb.org/) -- v3.2.1
 * [PM2](http://pm2.keymetrics.io/) -- v1.0.1
 
 ## Install requirements
