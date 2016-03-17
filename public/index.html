@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configlieri</title>
+
+    <style>
+        body { padding: 1rem; }
+        .clear { float: none; clear: both; height: 0; }
+        .row { float: left; width: 100%; padding-top: 2rem; }
+        .row div { text-align: center; }
+        .col-1, .col-3 { float: left; width: 40%; }
+        .col-2 { float: left; width: 20%; }
+        .col-1 img, .col-3 img { width: 80%; }
+        .col-2 { font-weight: bold; font-size: 4rem; padding-top: 7rem; }
+        .col-3 { padding-top: 4rem; }
+        .bot-2 { padding-bottom: 2rem; }
+        .bot-4 { padding-bottom: 4rem; }
+        .small { font-size: 1rem; }
+        #verdict {
+            display: block;
+            font-weight: bold;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        #the-verdict { display: none; padding: 2rem 0;}
+    </style>
+
+</head>
+<body>
+
+    <h1>Configlieri</h1>
+
+    <p class="bot-2">Instructions can be found <a href="https://github.com/anderfjord/configlieri" target="_blank">here</a>.</p>
+
+    <h2>Meanwhile...</h2>
+
+    <div class="row">
+
+        <div class="col-1">
+            <h3>MAGIC</h3>
+            <img src="img/unicorn.jpg" width="300" />
+        </div>
+
+        <div class="col-2">
+            VS
+        </div>
+
+        <div class="col-3">
+            <h3>BEAST</h3>
+            <img src="img/narwhal.jpg" width="300" />
+        </div>
+
+    </div>
+
+    <br class="clear" />
+
+    <div class="row bot-4">
+        <a id="verdict">And the verdict is... <span class="small">(Hint: click)</span></a>
+        <div id="the-verdict">
+            <img src="img/the_verdict.jpg" width="475" />
+            <h3>Unicorns don't exist. And even if they did, they'd be impaled long before they got anywhere near a narwhal.</h3>
+        </div>
+    </div>
+
+    <br class="clear" />
+
+    <script type="text/javascript">
+        var verdict = document.getElementById('verdict');
+        verdict.addEventListener('click', function () {
+            document.getElementById('the-verdict').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

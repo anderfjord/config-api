@@ -1,4 +1,7 @@
 config/host.json
 coverage
-data
+data/configurations
+data/sessions
+data/test
+data/users
 node_modules
