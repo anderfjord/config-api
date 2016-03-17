@@ -1,2 +1,4 @@
 config/host.json
+coverage
 data
+node_modules
