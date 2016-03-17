@@ -56,6 +56,10 @@ Action | Route | Payload
 **Sort Configs - port desc** | GET /configurations?sort=-port | 
 **Sort Configs - username asc** | GET /configurations?sort=+username | 
 **Sort Configs - username desc** | GET /configurations?sort=-username | 
+**Paginate Configs using default count** | GET /configurations?page=1 | 
+**Paginate Configs using custom count** | GET /configurations?page=1&count=5 | 
+**Sort & Paginate Configs using custom count** | GET /configurations?sort=-username&page=1&count=5 | 
+**Sort & Paginate Configs using custom count** | GET /configurations?sort=+name&page=2&count=5 | 
 **Add Config** | POST /configurations | { "name": "2tonecold", "hostname": "x-y-z.abc.net", port: 187, "username": "serpico" }
 **Get Config** | GET /configurations/2stonecold | 
 **Modify Config** | PUT /configurations/2stonecold | { "hostname": "a-b-c.123.net", port: 781 }
