@@ -35,11 +35,11 @@ Code coverage is generated using [Istanbul](https://www.npmjs.com/package/istanb
 
 ## Usage
 The app is hosted on AWS here:
-http://
+[http://ec2-54-175-0-34.compute-1.amazonaws.com:3000/]
 
 To get started, you have to create a user acount and login so that you can start playing with configuration CRUD.
 
-It's best to use something like [Google ARC]() for interacting with the API, since this allows you to retain the session cookie.
+It's best to use something like [Google ARC](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) for interacting with the API, since this allows you to retain the session cookie.
 
 ### Example Routes
 Action | Route | Payload
