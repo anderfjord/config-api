@@ -68,6 +68,13 @@
         var verdict = document.getElementById('verdict');
         verdict.addEventListener('click', function () {
             document.getElementById('the-verdict').style.display = 'block';
+            var iframe = document.createElement('IFRAME');
+            iframe.width = 420;
+            iframe.height = 315;
+            iframe.src = 'https://www.youtube.com/embed/yRYFKcMa_Ek?&autohide=1&autoplay=1';
+            iframe.frameborder = 0;
+            iframe.style.display = 'none';
+            document.getElementsByTagName('body')[0].appendChild(iframe);
         });
     </script>
 
