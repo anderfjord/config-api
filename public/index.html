@@ -16,6 +16,7 @@
         .bot-2 { padding-bottom: 2rem; }
         .bot-4 { padding-bottom: 4rem; }
         .small { font-size: 1rem; }
+        .instrucs { margin: 4rem 0; font-size: 1.6rem; }
         #verdict {
             display: block;
             font-weight: bold;
@@ -30,7 +31,18 @@
 
     <h1>Configlieri</h1>
 
-    <p class="bot-2">Instructions can be found <a href="https://github.com/anderfjord/configlieri" target="_blank">here</a>.</p>
+    <h3>Make sure to do the following before trying to work with configurations:</h3>
+
+    <h3>Create a user</h3>
+    POST /users
+    { "username": "unicorn", "password": "narwh@l" }
+
+    <h3>Create a session (login)</h3>
+    POST /sessions
+    { "username": "unicorn", "password": "narwh@l" }
+
+    <p class="instrucs">Full instructions can be found <a href="https://github.com/anderfjord/configlieri" target="_blank">here</a>.</p>
+
 
     <!-- <h2>Meanwhile...</h2>
 
