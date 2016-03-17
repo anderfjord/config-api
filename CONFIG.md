@@ -6,7 +6,7 @@ The contents of `config/host.json` should look something like this:
 {
     "port": 3000,
     "name": "Configurations API",
-    "salt": "aintnobodygottimeforthat"
+    "salt": "@1ntN0BuddyG0tThyme4That"
 }
 ```
 
